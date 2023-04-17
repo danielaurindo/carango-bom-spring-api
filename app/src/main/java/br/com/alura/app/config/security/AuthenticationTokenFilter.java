@@ -4,10 +4,6 @@ import java.io.IOException;
 import java.util.Optional;
 
 
-import jakarta.servlet.FilterChain;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -15,6 +11,11 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import br.com.alura.app.api.auth.TokenService;
 import br.com.alura.app.api.usuario.model.Usuario;
 import br.com.alura.app.api.usuario.repository.UsuarioRepository;
+
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public class AuthenticationTokenFilter extends OncePerRequestFilter {
 	
