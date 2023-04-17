@@ -1,13 +1,12 @@
 package br.com.alura.app.api.usuario.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.validation.constraints.NotEmpty;
-
 import br.com.alura.app.api.usuario.model.Perfil;
 import br.com.alura.app.api.usuario.model.Usuario;
 import br.com.alura.app.api.usuario.service.UsuarioService;
+
+import javax.validation.constraints.NotEmpty;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UsuarioForm {
 	
